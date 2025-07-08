@@ -35,24 +35,18 @@ An enhanced U-Net that integrates:
 
 ---
 
-## 📈 Results
-
-| Metric            | Value         |
-|-------------------|---------------|
-| Training Accuracy | 98.92%        |
-| Validation Acc.   | 97.21%        |
-| Test Accuracy     | **97.86%**    |
-| Test Loss         | 0.0670        |
-
----
-
 ## 📘 Comparison with DAU-Net Paper
 
-| Metric          | ResUNet++ (Ours) | DAU-Net Paper (ResUNet++) |
-|-----------------|------------------|----------------------------|
-| Test Accuracy   | **97.86%**       | ~**96.5%**                 |
-| Visual Results  | Sharp boundaries | Moderate smoothness        |
-| Model Params    | 6M+              | Similar                    |
+| **Metric**         | **ResUNet++ (Ours – BUS-UC)** | **ResUNet++ (Paper – BUSI)** |
+|--------------------|-------------------------------|-------------------------------|
+| **Test Accuracy**  | 97.86%                        | Not Reported                 |
+| **Dice Score (F1)**| 92.29%                        | 73.85%                        |
+| **Precision**      | 91.68%                        | 80.10%                        |
+| **Recall**         | 92.91%                        | 71.43%                        |
+| **IoU (Jaccard)**  | 85.68%                        | 60.02%                        |
+| **Test Loss**      | 0.0670                        | Not Reported                 |
+
+📌 **Note**: This comparison is **cross-dataset** — our model was trained and evaluated on the **BUS-UC** dataset, while the paper reports results on the **BUSI** dataset. Thus, the comparison reflects architectural and training strengths but does **not imply absolute superiority** without same-dataset evaluation.
 
 > ✅ Our model shows improved accuracy while retaining architectural depth, confirming reproducibility and robustness.
 
